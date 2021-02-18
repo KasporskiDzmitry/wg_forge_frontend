@@ -1,0 +1,59 @@
+@import "~bootstrap";
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+}
+
+table thead tr + tr > th:not(:nth-child(5)) {
+    cursor: pointer;
+}
+
+table thead tr th span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.table .thead-dark th {
+    vertical-align: middle;
+    height: 60px;
+}
+
+table td {
+    width: 200px;
+    overflow: hidden;
+}
+
+.scrollToTopButton {
+    display: none;
+    position: fixed;
+    left: 30px;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    border-radius: 50px;
+    background: aquamarine;
+    opacity: .7;
+    font-size: 45px;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s;
+}
+
+.scrollToTopButton i {
+    position: relative;
+    bottom: 22px;
+    font-size: 55px;
+}
+
+.scrollToTopButton:hover {
+    background: orangered;
+}
